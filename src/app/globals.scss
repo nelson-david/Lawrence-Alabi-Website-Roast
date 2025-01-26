@@ -92,6 +92,7 @@ html {
     background: var(--black-color);
     overflow-x: hidden !important;
     -webkit-tap-highlight-color: transparent !important;
+    scroll-behavior: smooth !important;
 }
 
 body {
