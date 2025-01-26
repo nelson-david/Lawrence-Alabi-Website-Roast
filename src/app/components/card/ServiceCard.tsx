@@ -13,7 +13,7 @@ const ServiceCard = ({
     color: string;
 }) => {
     return (
-        <div className={styles.serviceCard} data-aos="zoom-in-up">
+        <div className={styles.serviceCard} gt-aos="zoom-in-up">
             <div className={styles.imageWrapper}>
                 <Image src={image} alt={title} />
             </div>

@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className={styles.titleWrapper}>
                 <p>@2025</p>
-                <h2 data-aos="zoom-in-up">The Lawrenz</h2>
+                <h2 gt-aos="zoom-in-up">The Lawrenz</h2>
             </div>
             <div className={styles.creditWrapper}>
                 <p>
