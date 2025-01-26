@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "@/app/styles/section.module.scss";
-import HeroImg from "@/assets/images/hero.png";
+import HeroImg from "@/assets/images/hero.webp";
 
 const HeaderSection = () => {
     return (

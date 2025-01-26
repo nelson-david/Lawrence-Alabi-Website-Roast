@@ -6,37 +6,39 @@ import "./globals.scss";
 export const metadata: Metadata = {
     metadataBase: new URL("https://thelawrenz.theurban.studio"),
     title: "Lawrence Alabi",
-    description: "Pastel Lab by The Urban Studio",
+    description: "Lawrence Alabi by The Urban Studio",
     icons: {
         icon: "/favicon.ico",
         shortcut: "/favicon.ico",
         apple: "/apple-touch-icon.png",
     },
     alternates: {
-        canonical: "https://pastellab.theurban.studio",
+        canonical: "https://thelawrenz.theurban.studio",
         languages: {
             "en-NG": "/en-NG",
             "en-GH": "/de-GH",
         },
     },
     openGraph: {
-        title: "Pastel Lab - The Urban Studio",
-        description: "Pastel Lab by The Urban Studio",
+        title: "Lawrence Alabi",
+        description: "Lawrence Alabi by The Urban Studio",
         images: "https://pbs.twimg.com/card_img/1876029518747508736/aLfcXHKr?format=jpg&name=medium",
-        url: "https://pastellab.theurban.studio",
-        siteName: "Pastel Lab by The Urban Studio",
+        url: "https://thelawrenz.theurban.studio",
+        siteName: "Lawrence Alabi by The Urban Studio",
     },
 
     keywords: [
-        "Pastel Lab",
-        "Clone",
-        "Pastel Lab by The Urban Studio",
+        "The Lawrenz",
+        "Lawrence Alabi",
+        "Alabi Lawrence",
+        "Alabi",
         "The Urban Studio",
+        "The Lawrenz by The Urban Studio",
         "David Chikabadu Ogwu-Nelson",
         "David Chika",
         "The Urban Dev",
     ],
-    applicationName: "Pastel Lab by The Urban Studio",
+    applicationName: "Lawrence Alabi by The Urban Studio",
 };
 
 export const viewport: Viewport = {
