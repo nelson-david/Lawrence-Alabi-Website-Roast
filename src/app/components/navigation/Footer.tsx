@@ -29,7 +29,7 @@ const Footer = () => {
             <div className={styles.creditWrapper}>
                 <p>
                     Built with ❤️ by{"  "}
-                    <Link href="https://theurban.studio" target="_blank">
+                    <Link href="https://www.theurban.studio" target="_blank">
                         The Urban Studio
                     </Link>
                 </p>
