@@ -8,6 +8,12 @@ import Footer from "../components/navigation/Footer";
 const PageLayout = ({ children }: PropsWithChildren) => {
     const [lenis, setLenis] = useState<Lenis | null>(null);
 
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+        );
+    }
+
     const raf = useCallback(
         (time: number) => {
             lenis?.raf(time);
@@ -22,7 +28,12 @@ const PageLayout = ({ children }: PropsWithChildren) => {
         });
 
         if (!lenis) {
-            setLenis(new Lenis());
+            setLenis(
+                new Lenis({
+                    lerp: isMobile() ? 0.2 : 0.1, // Adjust lerp for mobile
+                    smoothWheel: !isMobile(), // Disable smooth wheel on mobile
+                })
+            );
         }
 
         requestAnimationFrame(raf);
