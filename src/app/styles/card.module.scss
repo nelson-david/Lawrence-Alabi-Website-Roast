@@ -119,4 +119,25 @@
             }
         }
     }
+
+    @media (max-width: 475.5px) {
+        height: 410px;
+
+        .contentWrapper {
+            h3 {
+                font-size: 2.2rem;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+
+    @media (max-width: 425.5px) {
+        height: 370px;
+        .contentWrapper {
+            h3 {
+                font-size: 2rem;
+                letter-spacing: -0.6px;
+            }
+        }
+    }
 }

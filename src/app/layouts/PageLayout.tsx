@@ -35,7 +35,7 @@ const PageLayout = ({ children }: PropsWithChildren) => {
     return (
         <div className="pageLayout">
             <div className="App">{children}</div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };

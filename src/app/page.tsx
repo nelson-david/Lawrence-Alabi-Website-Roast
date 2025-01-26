@@ -8,7 +8,7 @@ const Home = () => {
         <PageLayout>
             <HeaderSection />
             <ServicesSection />
-            {/*  <ClientsSection /> */}
+            <ClientsSection />
         </PageLayout>
     );
 };

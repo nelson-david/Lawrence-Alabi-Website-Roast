@@ -66,4 +66,58 @@
             }
         }
     }
+
+    @media (max-width: 767.5px) {
+        gap: 40px;
+
+        .titleWrapper {
+            p {
+                margin: 0px;
+                text-align: center;
+                font-size: 1.6rem;
+                letter-spacing: -0.1px;
+            }
+            h2 {
+                font-size: 17vw;
+                line-height: 150px;
+                letter-spacing: -6.5px;
+                padding: 5px 0px;
+            }
+        }
+
+        .creditWrapper {
+            p {
+                font-size: 1.1rem;
+                letter-spacing: -0.12px;
+            }
+        }
+    }
+
+    @media (max-width: 575.5px) {
+        gap: 40px;
+        padding: 35px 0px;
+        padding-bottom: 25px;
+
+        .titleWrapper {
+            p {
+                margin: 0px;
+                font-size: 1.4rem;
+                letter-spacing: -0.15px;
+            }
+            h2 {
+                font-size: 17.5vw;
+                margin-left: -13px;
+                line-height: 120px;
+                letter-spacing: -5.5px;
+            }
+        }
+
+        .creditWrapper {
+            margin-top: -20px;
+            p {
+                font-size: 1rem;
+                letter-spacing: -0.1px;
+            }
+        }
+    }
 }
