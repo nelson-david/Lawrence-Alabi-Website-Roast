@@ -22,31 +22,31 @@ const PageLayout = ({ children }: PropsWithChildren) => {
     //     [lenis]
     // );
 
-    // useEffect(() => {
-    //     AOS.init({
-    //         duration: 1000,
-    //     });
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
 
-    //     if (!lenis) {
-    //         if (!isMobile()) {
-    //             setLenis(
-    //                 new Lenis({
-    //                     lerp: isMobile() ? 0.2 : 0.1, // Adjust lerp for mobile
-    //                     smoothWheel: !isMobile(), // Disable smooth wheel on mobile
-    //                 })
-    //             );
+        // if (!lenis) {
+        //     if (!isMobile()) {
+        //         setLenis(
+        //             new Lenis({
+        //                 lerp: isMobile() ? 0.2 : 0.1, // Adjust lerp for mobile
+        //                 smoothWheel: !isMobile(), // Disable smooth wheel on mobile
+        //             })
+        //         );
 
-    //             requestAnimationFrame(raf);
-    //         } else {
-    //             // Fallback to native scrolling on mobile
-    //             document.documentElement.style.scrollBehavior = "smooth";
-    //         }
-    //     }
+        //         requestAnimationFrame(raf);
+        //     } else {
+        //         // Fallback to native scrolling on mobile
+        //         document.documentElement.style.scrollBehavior = "smooth";
+        //     }
+        // }
 
-    //     return () => {
-    //         lenis?.destroy();
-    //     };
-    // }, [lenis, raf]);
+        // return () => {
+        //     lenis?.destroy();
+        // };
+    }, []);
 
     return (
         <div className="pageLayout">
