@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Lawrence Alabi",
         description: "Lawrence Alabi by The Urban Studio",
-        images: "https://pbs.twimg.com/card_img/1876029518747508736/aLfcXHKr?format=jpg&name=medium",
+        images: "https://i.postimg.cc/vHJ5wgNK/Twitter-post-1-3-min.png",
         url: "https://thelawrenz.theurban.studio",
         siteName: "Lawrence Alabi by The Urban Studio",
     },
