@@ -1,0 +1,265 @@
+@mixin subHeaderText {
+    text-align: center;
+    font-size: 5.5vw;
+    font-family: var(--font-switzer);
+    font-weight: 600 !important;
+    letter-spacing: -0.5px;
+    margin: 0px;
+    color: var(--text-color);
+}
+
+// Header Section Style
+.headerSection {
+    border: none;
+    padding: 15px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .titleWrapper {
+        border: none;
+
+        h1 {
+            font-family: var(--font-switzer);
+            font-size: 14vw;
+            font-weight: 600 !important;
+            line-height: 270px;
+            letter-spacing: -8px;
+            color: var(--text-color);
+            white-space: pre;
+            margin: 0px;
+            text-align: left;
+        }
+
+        .titleDescription {
+            padding: 15px;
+
+            p {
+                font-family: var(--font-switzer);
+                font-weight: 500 !important;
+                font-size: 2.5rem;
+                letter-spacing: -0.5px;
+                margin: 0px;
+                color: var(--text-color);
+            }
+        }
+    }
+
+    .imageWrapper {
+        img {
+            width: 100%;
+        }
+    }
+
+    .descriptionWrapper {
+        padding: 20px 80px;
+
+        p {
+            font-family: var(--font-switzer);
+            font-weight: 600 !important;
+            font-size: 4.2rem;
+            letter-spacing: -1px;
+            margin: 0px;
+            color: var(--text-color);
+            line-height: 100px;
+        }
+    }
+
+    @media (max-width: 1024.5px) {
+        .titleWrapper {
+            h1 {
+                line-height: 200px;
+                letter-spacing: -6px;
+            }
+
+            .titleDescription {
+                padding: 10px;
+
+                p {
+                    font-size: 2.1rem;
+                    letter-spacing: -0.3px;
+                }
+            }
+        }
+
+        .imageWrapper {
+            img {
+                height: 600px;
+            }
+        }
+
+        .descriptionWrapper {
+            padding: 15px 50px;
+
+            p {
+                font-size: 3.3rem;
+                letter-spacing: -0.7px;
+                line-height: 75px;
+            }
+        }
+    }
+
+    @media (max-width: 850.5px) {
+        padding-bottom: 50px;
+        .titleWrapper {
+            h1 {
+                line-height: 150px;
+                letter-spacing: -4.5px;
+                font-size: 13.9vw;
+            }
+
+            .titleDescription {
+                padding: 10px;
+                padding-bottom: 0px;
+
+                p {
+                    font-size: 2rem;
+                    letter-spacing: -0.3px;
+                }
+            }
+        }
+
+        .descriptionWrapper {
+            padding: 0px 30px;
+
+            p {
+                font-size: 2.5rem;
+                letter-spacing: -0.5px;
+                line-height: 65px;
+            }
+        }
+    }
+
+    @media (max-width: 575.5px) {
+        padding: 25px;
+        padding-bottom: 50px;
+        .titleWrapper {
+            h1 {
+                line-height: 130px;
+                letter-spacing: -3.5px;
+                font-size: 13.9vw;
+            }
+
+            .titleDescription {
+                padding: 4px;
+                padding-bottom: 0px;
+
+                p {
+                    font-size: 1.6rem;
+                    letter-spacing: -0.3px;
+                }
+            }
+        }
+
+        .imageWrapper {
+            img {
+                height: 450px;
+            }
+        }
+
+        .descriptionWrapper {
+            padding: 0px 15px;
+            margin-top: -10px;
+
+            p {
+                font-size: 1.7rem;
+                letter-spacing: -0.3px;
+                line-height: 50px;
+                font-weight: 500 !important;
+            }
+        }
+    }
+
+    @media (max-width: 475.5px) {
+        padding: 15px;
+        padding-bottom: 50px;
+        gap: 25px;
+
+        .titleWrapper {
+            h1 {
+                line-height: 100px;
+                letter-spacing: -2px;
+                font-size: 13.7vw;
+            }
+
+            .titleDescription {
+                padding: 2px;
+                padding-bottom: 0px;
+
+                p {
+                    font-size: 1.4rem;
+                    letter-spacing: -0.1px;
+                }
+            }
+        }
+
+        .imageWrapper {
+            img {
+                height: 410px;
+            }
+        }
+
+        .descriptionWrapper {
+            padding: 0px 5px;
+            margin-top: -10px;
+
+            p {
+                font-size: 1.4rem;
+                letter-spacing: -0.05px;
+                line-height: 35px;
+                font-weight: 500 !important;
+            }
+        }
+    }
+}
+// End of Header Section Style
+
+// Services Section Style
+.servicesSection {
+    padding: 130px 15px;
+    padding-bottom: 50px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+    .header {
+        h2 {
+            @include subHeaderText();
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 100px 85px;
+    }
+
+    @media (max-width: 1024.5px) {
+        .content {
+            padding: 80px 15px;
+        }
+    }
+
+    @media (max-width: 899.5px) {
+        .content {
+            padding: 70px 0px;
+        }
+    }
+
+    @media (max-width: 768.5px) {
+        .content {
+            padding: 70px 50px;
+        }
+    }
+}
+// End of Services Section Style
+
+.clientsSection {
+    padding: 80px 15px;
+    padding-bottom: 40px;
+    .header {
+        h2 {
+            @include subHeaderText;
+            letter-spacing: -0.5px;
+        }
+    }
+}
