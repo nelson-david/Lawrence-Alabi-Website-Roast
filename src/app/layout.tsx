@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import "aos/dist/aos.css";
 import "./grid.scss";
 import "./globals.scss";
@@ -48,6 +49,11 @@ export const viewport: Viewport = {
     maximumScale: 1,
 };
 
+const inter = Inter({
+    subsets: ["latin"], // Specify subsets you need
+    weight: ["300", "400", "500", "600", "700", "800", "900"],
+});
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -55,7 +61,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body className={inter.className}>{children}</body>
         </html>
     );
 }

@@ -1,11 +1,12 @@
 @import url("https://api.fontshare.com/v2/css?f[]=switzer@200,300,400,500,600,700,800,900,1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     --white-color: #ffffff;
     --background-color: #000000;
     --text-color: rgb(255, 244, 226);
     --black-color: #000000;
-    --font-switzer: "Switzer", sans-serif;
+    --font-switzer: "Inter Tight", serif;
 }
 
 html {
