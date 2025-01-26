@@ -28,15 +28,20 @@ const PageLayout = ({ children }: PropsWithChildren) => {
         });
 
         if (!lenis) {
-            setLenis(
-                new Lenis({
-                    lerp: isMobile() ? 0.2 : 0.1, // Adjust lerp for mobile
-                    smoothWheel: !isMobile(), // Disable smooth wheel on mobile
-                })
-            );
-        }
+            if (!isMobile()) {
+                setLenis(
+                    new Lenis({
+                        lerp: isMobile() ? 0.2 : 0.1, // Adjust lerp for mobile
+                        smoothWheel: !isMobile(), // Disable smooth wheel on mobile
+                    })
+                );
 
-        requestAnimationFrame(raf);
+                requestAnimationFrame(raf);
+            } else {
+                // Fallback to native scrolling on mobile
+                document.documentElement.style.scrollBehavior = "smooth";
+            }
+        }
 
         return () => {
             lenis?.destroy();
