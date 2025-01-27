@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import styles from "@/app/styles/section.module.scss";
 import HeroImg from "@/assets/images/hero.webp";
+import { TypeAnimation } from "react-type-animation";
 
 const HeaderSection = () => {
     return (
@@ -10,7 +13,25 @@ const HeaderSection = () => {
 
                 <div className={styles.titleDescription}>
                     <p gt-aos="fade-up">
-                        Expert in <span>Copy Writing</span>
+                        Expert in{" "}
+                        <TypeAnimation
+                            sequence={[
+                                "Copy writing",
+                                1400, // Waits 1s
+                                "Branding",
+                                1400, // Waits 1s
+                                "Voice over",
+                                1400, // Waits 1s
+                                "Video Editing",
+                                1400, // Waits 1s
+                                "Cinematography",
+                                1400, // Waits 1s
+                            ]}
+                            wrapper="span"
+                            style={{ color: "#3d5af1" }}
+                            speed={50}
+                            repeat={Infinity}
+                        />{" "}
                     </p>
                 </div>
             </div>
