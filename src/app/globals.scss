@@ -92,7 +92,6 @@ html {
     background: var(--black-color);
     overflow-x: hidden !important;
     -webkit-tap-highlight-color: transparent !important;
-    scroll-behavior: smooth !important;
 }
 
 body {
@@ -108,4 +107,10 @@ a {
 img {
     object-position: center;
     object-fit: cover;
+}
+
+@media (max-width: 475.5px) {
+    html {
+        scroll-behavior: smooth !important;
+    }
 }
